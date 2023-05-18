@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign-Up Form</title>
+    <link rel="stylesheet" href="styles.css">
+    <script type="module" src="index.js"></script>
+</head>
+<body>
+
+   
+    
+    <form id="sign-up-form">
+        <div id="form-wrapper">
+
+            <div id="title">Sign-Up Form</div>
+            <div id="hr-div"><hr id="hr"></div>
+        <label for="name" class="label">Name</label>
+        <input type="text" id="name" class="input">
+
+
+        <label for="educational-qualification" class="label">Educational Qualification</label>
+        <select name="dropdown" id="educational-qualification" class="input">
+            <option value="10th Passed">10th Passed</option>
+            <option value="12th Passed">12th Passed</option>
+            <option value="B.Tech">B.Tech</option>
+            <option value="M.Tech">M.Tech</option>
+        </select>
+
+        <label for="mobile-number" class="label">Mobile Number</label>
+        <div id="mobile-div">
+        <span class="input" id="code-span">+91</span>
+        <input type="text" id="mobile-number" name="mobile-number" class="input">
+    </div>
+        <span id="mobile-error" class="error"></span>
+
+        <label for="age" class="label">Age</label>
+        <input type="number" min="1" max="100" step="1" id="age" name="age" class="input">
+
+        <label for="gender" class="label">Gender</label>
+        <select name="dropdown" id="gender" class="input">
+            <option value="Male">Male</option>
+            <option value="Female">Female</option>
+            <option value="Transgender">Transgender</option>
+            <option value="None">Prefer not to say</option>
+        </select>
+
+        <label for="email" class="label">Email</label>
+        <input type="email" name="email" id="email" class="input">
+        <span id="email-error" class="error"></span>
+
+        <label for="password" class="label">Enter Password</label>
+        <input type="password" id="password" class="input">
+
+        <label for="confirm-password" class="label" >Confirm Password</label>
+        <input type="password" id="confirm-password" class="input">
+        <span id="pwd-error" class="error"></span>
+
+        <label for="city" class="label">City</label>
+        <select name="city" id="city" class="input"></select>
+
+        <input type="submit" name="submit" id="submit-btn">
+    </div>
+    </form>
+
+
+</body>
+</html>
